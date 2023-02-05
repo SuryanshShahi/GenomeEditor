@@ -12,6 +12,7 @@ function App() {
   }, [mode]);
   useEffect(() => {
     document.getElementById("all").click();
+    document.title = "GENOMEditor";
   }, []);
   const setValue = (data, data1) => {
     setMode(data);
@@ -79,7 +80,11 @@ function App() {
                 >
                   Dropdown
                 </a>
-                <ul className="dropdown-menu position-absolute" style={{left:"-64px"}} aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu position-absolute"
+                  style={{ left: "-64px" }}
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <a
                       className="dropdown-item"
